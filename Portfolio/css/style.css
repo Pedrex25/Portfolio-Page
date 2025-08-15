@@ -1,61 +1,170 @@
+html, body { height: 100% }
+
 body{
     margin: 0;
 }
-
-/*Google fonts*/
-
-.kablammo-font {
-  font-family: "Kablammo", system-ui;
-  font-optical-sizing: auto;
+/*------ Google fonts------*/
+.tr-font {
+  font-family: "Turret Road", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "MORF" 0;
 }
 
-.header{
-    background: #2A7B9B;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(112, 27, 18, 1) 100%, rgba(237, 221, 83, 1) 100%);
+/*------------------------------------------------------------*/
+
+
+/*------ Toggle Switch ------*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-.header nav{
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*------------------------------------------------------------*/
+
+
+/*---------- nav --------------*/
+.nav{
     display: flex;
-    justify-content: flex-end;
-    background: #2A7B9B;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(112, 27, 18, 1) 100%, rgba(237, 221, 83, 1) 100%);
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 1rem 2rem;
 }
 
-.header nav ul{
+.nav-menu{
     display: flex;
+    gap: 2rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 2%;
 }
 
-.header a{
-    color: white;
+.nav-menu li a{
     text-decoration: none;
-    border-style: solid;
-    border-color: aqua;
-    border-width: 3%;
-    border-radius: 15%;
+    color: #FFF9AF;
 }
 
-/* .header a:hover{
+.nav-menu li{
     color: white;
-    text-decoration: none;
-    border-style: solid;
-    border-color: aqua;
-} */
+}
 
-.header h1{
+.nav-brand{
+    padding-left: 1rem;
+    color: #FFF9AF;
+}
+
+.nav-menu-font{
+    font-size: 1.2rem;
+}
+
+/*------------------------------------------------------------*/
+
+/*---------- header --------------*/
+.header{
+    width: 100%;
+    height: 100vh;
+}
+
+.header-img-border{
+    border-top: 3px solid #FFF9AF;
+    box-sizing: border-box;
+    display: block; /* removes default inline spacing */
+}
+
+.header-img{
+    background-image: url("../imgs/header_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.header-title-container{
     display: flex;
-    justify-content: center;
-    font-size: 4em;
+    align-items: center;
 }
 
-.main{
-    background: #a7a7c2;
-    background: linear-gradient(90deg, rgba(167, 167, 194, 1) 0%, rgba(0, 0, 0, 1) 100%, rgba(252, 176, 69, 1) 100%);
+.header-title-container:nth-child(1){
+    margin-left:7%;
 }
+
+.header-title-container:nth-child(2){
+    margin-left:15%;
+}
+.header-title-container:nth-child(3){
+    margin-left: 30%;
+}
+
+.header-title-container:nth-child(4){
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.header-title{
+    background: #FFF9AF;
+    background: -webkit-linear-gradient(180deg, rgba(255, 249, 175, 1) 0%, rgba(153, 149, 105,  1) 100%);
+    background: -moz-linear-gradient(180deg, rgba(255, 249, 175, 1) 0%, rgba(153, 149, 105, 1)  100%);
+    background: linear-gradient(180deg, rgba(255, 249, 175, 1) 0%, rgba(153, 149, 105, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF9AF",     endColorstr="#999569", GradientType=0);
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: -7px -7px #FFF9AF;
+    font-size: 5.2em;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+/*------------------------------------------------------------*/
