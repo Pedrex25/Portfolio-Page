@@ -60,6 +60,7 @@ body {
 
 .header-img-border {
   border-top: 3px solid #FFF9AF;
+  border-bottom: 3px solid #000000;
   box-sizing: border-box;
   display: block;
 }
@@ -128,6 +129,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 100%;
 }
 
 .main-about-container h1 {
@@ -141,6 +143,8 @@ body {
 
 .main-about-title {
   font-size: 5.2rem;
+  text-decoration: underline;
+  text-decoration-color: #000000;
   background: #FFF9AF;
   background: -webkit-linear-gradient(180deg, rgba(255, 249, 175, 1) 0%, rgba(153, 149, 105, 1) 100%);
   background: -moz-linear-gradient(180deg, rgba(255, 249, 175, 1) 0%, rgba(153, 149, 105, 1) 100%);
@@ -154,17 +158,21 @@ body {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   margin-top: 5% !important;
+  width: 30%;
 }
 
 .main-about-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
+
 
 .main-about-img {
   border: 2px solid black;
   border-radius: 50%;
   width: 20%;
+  align-items: center;
   height: auto;
 }
