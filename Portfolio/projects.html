@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="tr-font">
+<body class="tr-font" onload="getProjectXML(this.value)">
     <nav class="nav">
         <div class="nav-brand">
             <h1 class="text-color-beige">&lt;PB&gt;</h1>
@@ -60,145 +60,17 @@
                     <h1 class="title">Projects</h1>
                 </div>
                 <div class="projects-category-row">
-                    <form id="#">
-                        <label for="projects">Project Type:</label>
-                        <select class="project-category" name="projects" id="projects">
-                            <option value="all">All</option>
-                            <option value="programming">Programming</option>
-                            <option value="architecture">Architecture</option>
-                            <option value="compositions">Compositions</option>
-                            <option value="editing_software">Editing Software</option>
-                        </select>
-                    </form>
+                    <label for="projects">Project Type:&nbsp</label>
+                    <select id="projects" onchange="getProjectXML(this.value)" class="project-category" name="projects">
+                        <option value="all">All</option>
+                        <option value="programming">Programming</option>
+                        <option value="embbeded">Embbeded</option>
+                        <option value="architecture">Architecture</option>
+                        <option value="compositions">Compositions</option>
+                        <option value="editing_software">Editing Software</option>
+                    </select>
                 </div>
-                <div class="projects-card-row">
-                    <!-- Hangman Project -->
-                    <div class="card">
-                        <img class="card-image" src="https://opengraph.githubassets.com/1/Pedrex25/Terminal-Hangman"
-                            alt="Terminal-Hangman">
-                        <div class="card-container">
-                            <div class="card-title">
-                                <span>&nbsp</span>
-                                <a href="https://github.com/Pedrex25/Terminal-Hangman" target="_blank">
-                                    <h1>Terminal-Hangman</h1>
-                                </a>
-                            </div>
-                            <div class="card-languages">
-                                <div class="card-language">
-                                    <span class="card-dot" style="background-color: var(--c-color);"></span>
-                                    <span>C</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Calculator Project -->
-                    <div class="card">
-                        <img class="card-image" src="https://opengraph.githubassets.com/1/Pedrex25/Terminal-Calculator"
-                            alt="Terminal-Calculator" width="100%">
-                        <div class="card-container">
-                            <div class="card-title">
-                                <span>&nbsp</span>
-                                <a href="https://github.com/Pedrex25/Terminal-Calculator" target="_blank">
-                                    <h1>Terminal-Calculator</h1>
-                                </a>
-                            </div>
-                            <div class="card-languages">
-                                <div class="card-language">
-                                    <span class="card-dot" style="background-color: var(--c-color);"></span>
-                                    <span>C</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Rock-Paper-Scissors Project -->
-                    <div class="card">
-                        <img class="card-image"
-                            src="https://opengraph.githubassets.com/1/Pedrex25/Terminal-Rock-Paper-Scissors"
-                            alt="Terminal-Rock-Paper-Scissors" width="100%">
-                        <div class="card-container">
-                            <div class="card-title">
-                                <span>&nbsp</span>
-                                <a href="https://github.com/Pedrex25/Terminal-Rock-Paper-Scissors" target="_blank">
-                                    <h1>Terminal-Rock-Paper-Scissors</h1>
-                                </a>
-                            </div>
-                            <div class="card-languages">
-                                <div class="card-language">
-                                    <span class="card-dot" style="background-color: var(--c-color);"></span>
-                                    <span>C</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-card-row">
-                    <!-- 8-Bit-LED-Counter Project -->
-                    <div class="card">
-                        <img class="card-image"
-                            src="https://opengraph.githubassets.com/1/Pedrex25/Arduino-8-Bit-LED-Counter"
-                            alt="Arduino-8-Bit-LED-Counter" width="100%">
-                        <div class="card-container">
-                            <div class="card-title">
-                                <span>&nbsp</span>
-                                <a href="https://github.com/Pedrex25/Arduino-8-Bit-LED-Counter" target="_blank">
-                                    <h1>8-Bit-LED-Counter</h1>
-                                </a>
-                            </div>
-                            <div class="card-languages">
-                                <div class="card-language">
-                                    <span class="card-dot" style="background-color: var(--cpp-color);"></span>
-                                    <span>C++</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Arduino-Voltage-Current-Inspector Project -->
-                    <div class="card">
-                        <img class="card-image"
-                            src="https://opengraph.githubassets.com/1/Pedrex25/Arduino-Voltage-Current-Inspector" alt=""
-                            width="100%">
-                        <div class="card-container">
-                            <div class="card-title">
-                                <span>&nbsp</span>
-                                <a href="https://github.com/Pedrex25/Arduino-Voltage-Current-Inspector" target="_blank">
-                                    <h1>Arduino-Voltage-Current-Inspector</h1>
-                                </a>
-                            </div>
-                            <div class="card-languages">
-                                <div class="card-language">
-                                    <span class="card-dot" style="background-color: var(--cpp-color);"></span>
-                                    <span>C++</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portfolio-Page Project -->
-                    <div class="card">
-                        <img class="card-image" src="https://opengraph.githubassets.com/1/Pedrex25/Portfolio-Page"
-                            alt="Portfolio-Page" width="100%">
-                        <div class="card-container">
-                            <div class="card-title">
-                                <span>&nbsp</span>
-                                <a href="https://github.com/Pedrex25/Portfolio-Page" target="_blank">
-                                    <h1>Portfolio-Page</h1>
-                                </a>
-                            </div>
-                            <div class="card-languages">
-                                <div class="card-language">
-                                    <span class="card-dot" style="background-color: var(--html-color);"></span>
-                                    <span>HTML</span>
-                                </div>
-                                <div class="card-language">
-                                    <span class="card-dot" style="background-color: var(--css-color);"></span>
-                                    <span>CSS</span>
-                                </div>
-                                <div class="card-language">
-                                    <span class="card-dot" style="background-color: var(--js-color);"></span>
-                                    <span>JS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="project-list" class="projects-card-row">
                 </div>
             </div>
         </section>
@@ -207,23 +79,24 @@
         <ul class="footer-icons">
             <li>
                 <a href="https://www.youtube.com/" target="_blank">
-                    <img src="imgs/svgs/social/youtube-color-svgrepo-com.svg" alt="Youtube Icon" width="40" height="40">
+                    <img src="assets/svgs/social/youtube-color-svgrepo-com.svg" alt="Youtube Icon" width="40"
+                        height="40">
                 </a>
             </li>
             <li>
                 <a href="https://github.com/Pedrex25" target="_blank">
-                    <img src="imgs/svgs/social/github-142-svgrepo-com.svg" alt="Github Icon" width="40" height="40">
+                    <img src="assets/svgs/social/github-142-svgrepo-com.svg" alt="Github Icon" width="40" height="40">
                 </a>
                 </a>
             </li>
             <li>
                 <a href="https://exercism.org/profiles/Pedrex25" target="_blank">
-                    <img src="imgs/svgs/social/exercism-svgrepo-com.svg" alt="Exercism Icon" width="40" height="40">
+                    <img src="assets/svgs/social/exercism-svgrepo-com.svg" alt="Exercism Icon" width="40" height="40">
                 </a>
             </li>
             <li>
                 <a href="www.linkedin.com/in/pedro-bernardo-735b692b5" target="_blank">
-                    <img src="imgs/svgs/social/linked-in-logo-of-two-letters-svgrepo-com.svg" alt="Linkedin Icon"
+                    <img src="assets/svgs/social/linked-in-logo-of-two-letters-svgrepo-com.svg" alt="Linkedin Icon"
                         width="40" height="40">
                 </a>
             </li>

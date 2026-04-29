@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio>
+    <!-- Programming -->
+    <project id="1" category="programming">
+        <title>CLI-Hangman</title>
+        <img>https://opengraph.githubassets.com/1/Pedrex25/CLI-Hangman</img>
+        <link>https://github.com/Pedrex25/CLI-Hangman</link>
+        <stack>
+            <language>C</language>
+        </stack>
+    </project>
+
+    <project id="2" category="programming">
+        <title>CLI-Calculator</title>
+        <img>https://opengraph.githubassets.com/1/Pedrex25/CLI-Calculator</img>
+        <link>https://github.com/Pedrex25/CLI-Calculator</link>
+        <stack>
+            <language>C</language>
+        </stack>
+    </project>
+    
+    <project id="3" category="programming">
+        <title>CLI-Rock-Paper-Scissors</title>
+        <img>https://opengraph.githubassets.com/1/Pedrex25/CLI-Rock-Paper-Scissors</img>
+        <link>https://github.com/Pedrex25/CLI-Rock-Paper-Scissors</link>
+        <stack>
+            <language>C</language>
+        </stack>
+    </project>
+
+    <!-- Embbeded -->
+    <project id="1" category="embbeded">
+        <title>Arduino-8-Bit-LED-Counter</title>
+        <img>https://opengraph.githubassets.com/1/Pedrex25/Arduino-8-Bit-LED-Counter</img>
+        <link>https://github.com/Pedrex25/Arduino-8-Bit-LED-Counter</link>
+        <stack>
+            <language>C++</language>
+        </stack>
+    </project>
+
+    <project id="2" category="embbeded">
+        <title>Arduino-Voltage-Current-Inspector</title>
+        <img>https://opengraph.githubassets.com/1/Pedrex25/Arduino-Voltage-Current-Inspector</img>
+        <link>https://github.com/Pedrex25/Arduino-Voltage-Current-Inspector</link>
+        <stack>
+            <language>C++</language>
+        </stack>
+    </project>
+
+    <!-- Architecture -->
+    <!-- <project id="1" category="architecture">
+        <title></title>
+        <img></img>
+        <link></link>
+    </project> -->
+
+    <!-- Compositions -->
+    <!-- <project id="1" category="compositions">
+        <title></title>
+        <img></img>
+        <link></link>
+    </project> -->
+
+    <!-- Editing Software -->
+    <!-- <project id="1" category="editing_software">
+        <title></title>
+        <img></img>
+        <link></link>
+    </project> -->
+</portfolio>
