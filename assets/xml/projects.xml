@@ -49,9 +49,13 @@
 
     <!-- Architecture -->
     <!-- <project id="1" category="architecture">
-        <title></title>
-        <img></img>
-        <link></link>
+        <title>KW</title>
+        <imgs>
+            <img>assets\imgs\architecture\KW\Image1.png</img>
+            <img>assets\imgs\architecture\KW\Image2.png</img>
+            <img>assets\imgs\architecture\KW\Image3.png</img>
+        </imgs>
+        <link>assets\imgs\architecture\KW\Image1.png</link>
     </project> -->
 
     <!-- Compositions -->

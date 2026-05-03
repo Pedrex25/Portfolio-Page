@@ -144,7 +144,7 @@ function createProjectCard(stack, title, img, link) {
 
     const card_project = `
         <div class="card">
-            <img class="card-image" src="${img}" alt="${title}" width="100%">
+            <img id="card-img" class="card-image" src="${img}" alt="${title}" width="100%">
             <div class="card-container">
                 <div class="card-title">
                     <span>&nbsp;</span>
