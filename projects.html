@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Bernardo Portfolio</title>
+    <title>Pedro Bernardo - Projects</title>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,18 +22,22 @@
         <div class="nav-brand">
             <h1 class="text-color-beige">&lt;PB&gt;</h1>
             <ul class="nav-language nav-menu-font">
-                <li>PT</li>
+                <li class="nav-language-translate" onclick="translateToPT()">PT</li>
                 <li>|</li>
-                <li>ENG</li>
+                <li class="nav-language-translate" onclick="translateToENG()">ENG</li>
             </ul>
         </div>
         <ul class="nav-menu nav-menu-font">
             <li>&lt</li>
-            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
             <li>|</li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a id="translate0" href="projects.html">Projects</a></li>
             <li>|</li>
-            <li><a href="resume.html">Resumé</a></li>
+            <li>
+                <a id="translate1" href="resume.html">Resumé</a>
+            </li>
             <li>&gt</li>
         </ul>
     </nav>
