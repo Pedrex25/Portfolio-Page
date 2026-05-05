@@ -40,6 +40,11 @@ let ENG_strings = [
     "Made by Pedro Bernardo."
 ];
 
+
+/**Translates text in html to PT
+ * 
+ * @returns null
+ */
 function translateToPT() {
     for (let i = 0; 1; i++) {
         let container = document.getElementById(`translate${i}`);
@@ -48,14 +53,13 @@ function translateToPT() {
             return null;
         else
             container.innerHTML = PT_strings[i];
-
     }
 }
 
 
-/**
+/**Translates text in html to ENG
  * 
- * @returns nothing
+ * @returns null
  */
 function translateToENG() {
     for (let i = 0; 1; i++) {
@@ -65,7 +69,6 @@ function translateToENG() {
             return null;
         else
             container.innerHTML = ENG_strings[i];
-
     }
 }
 
