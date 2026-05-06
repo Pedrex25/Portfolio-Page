@@ -5,74 +5,6 @@ const COMPOSITIONS = "compositions";
 const EDITING_SOFTWARE = "editing_software";
 
 /**
- * Gets the current year
- */
-function getCurrentYear() {
-    let current_year = new Date().getFullYear();
-    document.getElementById("year").innerHTML = current_year;
-}
-
-let PT_strings = [
-    "Projetos",
-    "Cúrriculo",
-    "Olá, sou o",
-    "Desenvolvedor Software Júnior",
-    "Sobre Mim",
-    "Sou Técnico Especialista em Tecnologias e Programação de Sistemas de Informação (ATEC). Recentemente, tive a oportunidade de aplicar os meus conhecimentos na APTIV, onde desenvolvi uma solução web para monitorização de robôs numa linha de produção. Tenho bases sólidas em linguagens como Java, C#, SQL e tecnologias Web. Sou focado na resolução de problemas e, como tenho também experiência em 3D, tenho facilidade em visualizar o produto final. Procuro agora o meu primeiro desafio profissional sólido para continuar a evoluir como programador.",
-    "- Línguas:",
-    "- Embbeded:",
-    "- Ferramentas:",
-    "Projetos Destacados",
-    "Feito por Pedro Bernardo"
-];
-
-let ENG_strings = [
-    "Projects",
-    "Resumé",
-    "Hi, I'm",
-    "Junior Software Developer",
-    "About Me",
-    "I am a Certified Specialist in Information Systems Technology and Programming (ATEC). Recently, I had the opportunity to apply my knowledge at APTIV, where I developed a web-based solution for monitoring robots on a production line. I have a solid foundation in languages such as Java, C#, SQL, and web technologies. I am focused on problem-solving, and since I also have experience in 3D. I am now looking for my first substantial professional challenge to continue growing as a programmer.",
-    "- Languages:",
-    "- Embbeded:",
-    "- Tools:",
-    "Featured Projects",
-    "Made by Pedro Bernardo."
-];
-
-
-/**Translates text in html to PT
- * 
- * @returns null
- */
-function translateToPT() {
-    for (let i = 0; 1; i++) {
-        let container = document.getElementById(`translate${i}`);
-
-        if (container === null)
-            return null;
-        else
-            container.innerHTML = PT_strings[i];
-    }
-}
-
-
-/**Translates text in html to ENG
- * 
- * @returns null
- */
-function translateToENG() {
-    for (let i = 0; 1; i++) {
-        let container = document.getElementById(`translate${i}`);
-
-        if (container === null)
-            return null;
-        else
-            container.innerHTML = ENG_strings[i];
-    }
-}
-
-/**
  * Reads the xml from the file containing all of my projects
  * @param {any} selected_option receives a returned string from getSelectOption()
  */
@@ -220,5 +152,3 @@ function createProjectCard(stack, title, img, link) {
     `;
     container.innerHTML += card_project;
 }
-
-getCurrentYear();

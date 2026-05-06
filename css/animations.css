@@ -1,0 +1,37 @@
+@import "style.css";
+
+
+/*---------- nav --------------*/
+.nav-language-translate:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+    text-decoration-color: #FFF9AF !important;
+}
+
+.header-title:hover {
+    box-shadow: -7px -7px 6px rgb(0, 0, 0);
+    margin-left: 2%;
+    margin-top: 2%;
+    transition: 0.4s;
+}
+
+.title:hover {
+    box-shadow: -7px -7px 6px rgb(46, 43, 43);
+    margin-left: 2%;
+    margin-top: 2%;
+    transition: 0.4s;
+}
+
+.about-img:hover {
+    box-shadow: -7px -7px 6px rgb(46, 43, 43);
+    transition: 0.5s;
+}
+
+/* Featured projects and projects */
+.card:hover {
+    box-shadow: -7px -7px 6px rgb(46, 43, 43);
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: white;
+    transition: 0.5s;
+}

@@ -15,6 +15,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body class="tr-font">
@@ -22,9 +23,13 @@
         <div class="nav-brand">
             <h1 class="text-color-beige">&lt;PB&gt;</h1>
             <ul class="nav-language nav-menu-font">
-                <li class="nav-language-translate" onclick="translateToPT()">PT</li>
+                <li id="translatePT" class="nav-language-translate"
+                    onclick="pageToTranslate(document.getElementById('translatePT').textContent)">
+                    PT</li>
                 <li>|</li>
-                <li class="nav-language-translate" onclick="translateToENG()">ENG</li>
+                <li id="translateENG" class="nav-language-translate"
+                    onclick="pageToTranslate(document.getElementById('translateENG').textContent)">
+                    ENG</li>
             </ul>
         </div>
         <ul class="nav-menu nav-menu-font">
@@ -336,11 +341,14 @@
                 </a>
             </li>
         </ul>
-        <span class="footer-text">&copy; &nbsp<span id="year"></span>&nbsp<span id="translate10">Made by Pedro
-                Bernardo.</span></span>
+        <b><span class="footer-text">&copy;&nbsp<span id="year"></span>&nbsp<span id="translate10">Made
+                    by Pedro
+                    Bernardo</span></span></b>
     </footer>
 </body>
 
-<script src=" js/script.js"></script>
+<script src=" js/current_year.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/projects.js"></script>
 
 </html>

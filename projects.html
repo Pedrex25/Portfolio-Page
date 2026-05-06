@@ -15,6 +15,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body class="tr-font" onload="getProjectXML(this.value)">
@@ -22,9 +23,13 @@
         <div class="nav-brand">
             <h1 class="text-color-beige">&lt;PB&gt;</h1>
             <ul class="nav-language nav-menu-font">
-                <li class="nav-language-translate" onclick="translateToPT()">PT</li>
+                <li id="translatePT" class="nav-language-translate"
+                    onclick="pageToTranslate(document.getElementById('translatePT').textContent)">
+                    PT</li>
                 <li>|</li>
-                <li class="nav-language-translate" onclick="translateToENG()">ENG</li>
+                <li id="translateENG" class="nav-language-translate"
+                    onclick="pageToTranslate(document.getElementById('translateENG').textContent)">
+                    ENG</li>
             </ul>
         </div>
         <ul class="nav-menu nav-menu-font">
@@ -45,13 +50,13 @@
     <header class="header">
         <div class="header-img header-img-border header-container">
             <div class="header-title-container">
-                <h1 class="header-title">Hi, I'm</h1>
+                <h1 id="translate2" class="header-title">Hi, I'm</h1>
             </div>
             <div class="header-title-container">
                 <h1 class="header-title">Pedro Bernardo</h1>
             </div>
             <div class="header-title-container">
-                <h1 class="header-title">Junior Software Developer</h1>
+                <h1 id="translate3" class="header-title">Junior Software Developer</h1>
             </div>
         </div>
     </header>
@@ -61,17 +66,17 @@
         <section class="projects">
             <div class="projects-container">
                 <div class="projects-title-wrapper">
-                    <h1 class="title">Projects</h1>
+                    <h1 id="translate4" class="title">Projects</h1>
                 </div>
                 <div class="projects-category-row">
-                    <label for="projects">Project Type:&nbsp</label>
+                    <label id="translate5" for="projects">Project Type:&nbsp</label>
                     <select id="projects" onchange="getProjectXML(this.value)" class="project-category" name="projects">
-                        <option value="all">All</option>
-                        <option value="programming">Programming</option>
-                        <option value="embbeded">Embbeded</option>
-                        <option value="architecture">Architecture</option>
-                        <option value="compositions">Compositions</option>
-                        <option value="editing_software">Editing Software</option>
+                        <option id="translate6" value="all">All</option>
+                        <option id="translate7" value="programming">Programming</option>
+                        <option id="translate8" value="embbeded">Embbeded</option>
+                        <option id="translate9" value="architecture">Architecture</option>
+                        <option id="translate10" value="compositions">Compositions</option>
+                        <option id="translate11" value="editing_software">Editing Software</option>
                     </select>
                 </div>
                 <div id="project-list" class="projects-card-row">
@@ -105,9 +110,14 @@
                 </a>
             </li>
         </ul>
-        <span class="footer-text">&copy; &nbsp<span id="year"></span>&nbspMade by Pedro Bernardo.</span>
+        <b><span class="footer-text">&copy;&nbsp<span id="year"></span>&nbsp<span id=" translate10">Made
+                    by Pedro
+                    Bernardo</span></span></b>
     </footer>
 </body>
 
-<script src="js/script.js"></script>
+<script src=" js/current_year.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/projects.js"></script>
+
 </body>
